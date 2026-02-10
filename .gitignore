@@ -47,8 +47,11 @@ cache/
 # ----------------------------
 external/*
 !external/
+!external/stable-diffusion-webui
 !external/stable-diffusion-webui/
+!external/ComfyUI
 !external/ComfyUI/
+
 
 # ----------------------------
 # Electron UI dependencies
