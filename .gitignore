@@ -1,4 +1,6 @@
-﻿# Python
+﻿# ----------------------------
+# Python
+# ----------------------------
 __pycache__/
 *.py[cod]
 *$py.class
@@ -6,7 +8,9 @@ __pycache__/
 .pytest_cache/
 *.log
 
+# ----------------------------
 # Python packaging / build
+# ----------------------------
 .Python
 build/
 dist/
@@ -22,24 +26,38 @@ wheels/
 .installed.cfg
 pip-wheel-metadata/
 
-# venv
+# ----------------------------
+# Virtual environments
+# ----------------------------
 venv/
 .venv/
 
-# EDMG generated
+# ----------------------------
+# EDMG generated / runtime artifacts
+# ----------------------------
 support_bundles/
 install_profiles/
 models_store/
 outputs/
 cache/
 
-# external apps (DON'T commit these)
-external/
+# ----------------------------
+# External apps
+# Ignore everything under external/ EXCEPT the submodule mount points
+# ----------------------------
+external/*
+!external/
+!external/stable-diffusion-webui/
+!external/ComfyUI/
 
+# ----------------------------
 # Electron UI dependencies
+# ----------------------------
 desktop/electron/node_modules/
 
+# ----------------------------
 # OS / editor
+# ----------------------------
 Thumbs.db
 Desktop.ini
 *.code-workspace
